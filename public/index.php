@@ -5,11 +5,17 @@ session_start();
     <html>
     <head>
         <title>Make Contact</title>
+        <link href="favicon.ico" rel="shortcut icon">
+        <link  type="text/css" rel="stylesheet" href="css/animate.css">
         <link  type="text/css" rel="stylesheet" href="css/bulma.min.css">
         <link  type="text/css" rel="stylesheet" href="css/master.css">
     </head>
     <body>
     <div class="flex-container">
+        <div class="logo">
+            <img class="rocket animated zoomInLeft" src="img/logo-sm.svg" alt="rocket">
+            <img class="rf" src="img/logo.svg" alt="Rocket Fuel logo">
+        </div>
         <h1>MAKE CONTACT</h1>
         <form action="submit.php" method="POST">
             <div class="field">
@@ -42,6 +48,9 @@ session_start();
             <?php else: ?>
                 <h1 style="color:#ff4d4d">PLEASE TRY AGAIN</h1>
             <?php endif; ?>
+            <div class="logo">
+                <img class="rocket animated zoomInLeft" src="img/logo-sm.svg" alt="rocket">
+            </div>
         <?php endif; ?>
     </div>
     </body>
